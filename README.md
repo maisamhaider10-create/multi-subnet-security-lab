@@ -20,21 +20,11 @@ log-analyzer/SIEM-lite tool.
 ---
 
 ## Architecture
-' ' ' 
-                ┌──────────┐         ┌──────────┐
-                │    r1    │─────────│    r2    │
-                │ (router) │ shared  │ (router) │
-                └────┬─────┘ segment └────┬─────┘
-                     │      10.0.1.0/24    │
-          10.0.0.0/24│                     │10.0.2.0/24
-                ┌────┴─────┐         ┌─────┴────┐
-          ┌─────┴───┬──────┴───┐┌─────┴────┬─────┴────┐
-          │   h1    │    h2    ││   h3     │    h4    │
-          └─────────┴──────────┘└──────────┴──────────┘
-                                 ┌──────────┬──────────┐
-                                 │   h5     │    h6     │
-                                 └──────────┴──────────┘
-' ' ' 
+'''
+Subnet A (10.0.0.0/24): h1, h2  ---- r1
+Subnet B (10.0.1.0/24): h3, h4  ---- r1 <--shared segment--> r2
+Subnet C (10.0.2.0/24): h5, h6  ---- r2
+''' 
 - **2 routers** (r1, r2) connected via a shared segment (10.0.1.0/24)
 - **3 subnets**, 6 hosts total (2 per subnet)
 - Static routing configured between subnets (no dynamic routing protocol)
