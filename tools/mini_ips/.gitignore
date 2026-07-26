@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+logs/*.log
+test_scan.py
+test_rules.py

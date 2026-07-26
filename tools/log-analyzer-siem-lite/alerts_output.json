@@ -1,0 +1,28 @@
+[
+    {
+        "type": "BRUTE_FORCE",
+        "ip": "203.0.113.45",
+        "attempt_count": 8,
+        "window_start": "2026-07-24T17:45:02",
+        "window_end": "2026-07-24T17:45:15",
+        "username_targeted": "Maisam"
+    },
+    {
+        "type": "USERNAME_SWEEP",
+        "ip": "198.51.100.77",
+        "usernames_tried": [
+            "Ali",
+            "Haider",
+            "Maisam",
+            "admin"
+        ],
+        "window_start": "2026-07-24T22:30:02",
+        "window_end": "2026-07-24T22:30:19"
+    },
+    {
+        "type": "OFF_HOURS_LOGIN",
+        "ip": "203.0.113.45",
+        "username": "Haider",
+        "timestamp": "2026-07-25T03:14:07"
+    }
+]

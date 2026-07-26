@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+
+# Test/debug artifacts
+*.pcap
+*.log
+
+# Editor/OS clutter
+.vscode/
